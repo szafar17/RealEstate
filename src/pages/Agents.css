@@ -1,0 +1,149 @@
+.agents {
+  min-height: 100vh;
+}
+
+.agents-hero {
+  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
+  color: #fff;
+  padding: 4rem 0;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.agents-hero .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.agents-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.agents-hero p {
+  font-size: 1.25rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+.agents-content {
+  padding: 2rem 0 4rem;
+}
+
+.agents-content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.agent-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.agent-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.agent-image {
+  width: 100%;
+  height: 350px;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.agent-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.agent-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  color: #999;
+}
+
+.agent-placeholder svg {
+  opacity: 0.5;
+}
+
+.agent-info {
+  padding: 2rem;
+}
+
+.agent-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.agent-role {
+  font-size: 1.1rem;
+  color: #0066cc;
+  font-weight: 600;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .agents-hero {
+    padding: 3rem 0;
+  }
+
+  .agents-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .agents-hero p {
+    font-size: 1.1rem;
+  }
+
+  .agents-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .agent-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  .agents-hero h1 {
+    font-size: 2rem;
+  }
+
+  .agent-image {
+    height: 250px;
+  }
+
+  .agent-info {
+    padding: 1.5rem;
+  }
+}
+
