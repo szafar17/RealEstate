@@ -4,7 +4,7 @@ const Agents = () => {
   const agents = [
     {
       id: 1,
-      name: 'Hamed Saraj',
+      name: 'John Saraj',
       role: 'Broker',
       image: null, // Will be added later
     },

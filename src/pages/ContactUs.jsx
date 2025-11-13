@@ -14,20 +14,21 @@ const ContactUs = () => {
         <div className="container">
           <div className="contact-card">
             <h2>We'd Love to Hear From You</h2>
-            <p>Whether you're looking to buy, sell, or just have questions about real estate, our team at Ambassadors is here to help.</p>
+            <p>Whether you're looking to buy, sell, rent, or just have questions about real estate, our team at Ambassadors is here to help.</p>
             
             <div className="contact-info">
               <div className="contact-item">
                 <h3>Phone</h3>
-                <p>Contact information coming soon</p>
+                <p>201-712-0041</p>
               </div>
               <div className="contact-item">
                 <h3>Email</h3>
-                <p>Contact information coming soon</p>
+                <p>saraj@ambassadorsre.com</p>
               </div>
               <div className="contact-item">
                 <h3>Office</h3>
-                <p>Office address coming soon</p>
+                <p>17 Watchung Ave
+                Chatham, NJ 07928</p>
               </div>
             </div>
           </div>

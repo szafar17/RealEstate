@@ -9,19 +9,18 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <span className="logo-text">Ambassadors</span>
+          <span className="logo-text">Ambassadors R.E.</span>
         </Link>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <a href="https://placeholder-listings-url.com" className="nav-link" target="_blank" rel="noopener noreferrer">Listings</a>
           <Link to="/about" className="nav-link">About Us</Link>
           <Link to="/agents" className="nav-link">Agents</Link>
-          <Link to="/contact" className="nav-link">Contact Us</Link>
+          
         </nav>
 
         <div className="header-actions">
-          <Link to="/" className="btn-secondary">Sign In</Link>
-          <Link to="/" className="btn-primary">Join</Link>
+          <Link to="/contact" className="btn-primary">Contact Us</Link>
         </div>
 
         <button 
