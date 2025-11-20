@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Hero from '../components/Hero'
 import FeaturedListings from '../components/FeaturedListings'
 import { fetchProperties } from '../services/api'
 import './Home.css'
@@ -27,7 +26,15 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Hero />
+      <div className="home-hero">
+        <div className="home-hero-content">
+          <img src="/ambassdorsLogo.png" alt="Ambassadors Real Estate" className="home-logo" />
+          <div className="home-hero-text">
+            <h1 className="home-hero-title">Find Your Dream Home</h1>
+            <p className="home-hero-subtitle">Discover the perfect property with Ambassadors Real Estate</p>
+          </div>
+        </div>
+      </div>
       {loading ? (
         <div className="loading-container">
           <div className="loading-spinner"></div>

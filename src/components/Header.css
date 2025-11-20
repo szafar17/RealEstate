@@ -14,23 +14,20 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  position: realtive;
+  position: relative;
 }
 
 .logo {
   text-decoration: none;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #003366;
-  letter-spacing: -0.5px;
-  flex-shrink: 0;  /* Add this to prevent logo from shrinking */
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
-.logo-text {
-  background: linear-gradient(135deg, #003366 0%, #0066cc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.logo-image {
+  height: 85px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav {
@@ -47,7 +44,7 @@
   text-decoration: none;
   color: #333;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   transition: color 0.3s;
   position: relative;
 }
@@ -164,8 +161,8 @@
     padding: 1rem;
   }
 
-  .logo {
-    font-size: 1.5rem;
+  .logo-image {
+    height: 68px;
   }
 }
 
