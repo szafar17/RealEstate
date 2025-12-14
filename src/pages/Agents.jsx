@@ -4,35 +4,35 @@ const Agents = () => {
   const agents = [
     {
       id: 1,
-      name: 'Hamed Saraj',
-      role: 'Broker/Sales Associate',
-      image: null,
-      company: 'Ambassadors RE',
-      address: null,
-      phone: '(201) 712-0041 Office',
-      phone2: '(201) 314-4350 Cell',
-      email: null,
+      name: 'John Saraj',
+      role: 'Realtor®',
+      image: '/IMG_6445.jpg',
+      phone: '(201) 314-4350',
+      email: 'saraj@ambassadorsre.com',
     },
     {
       id: 2,
       name: 'Sahil Zafar',
-      role: 'Agent',
-      image: null,
-      company: null,
-      address: null,
-      phone: null,
-      email: null,
+      role: 'Realtor®',
+      image: 'ZPic.JPG',
+      phone: '(908) 635-6446',
+      email: 'sahilzafar81@gmail.com',
     },
     {
       id: 3,
       name: 'Vitaliia Stefurak',
       role: 'Realtor®',
       image: '/2.png',
-      company: 'Halo Realty',
-      address: '792 Chimney Rock Road, Suite F',
-      address2: 'Bridgewater, NJ 08836',
-      phone: '646-387-4478',
+      phone: '(646) 387-4478',
       email: 'vitaestateexpert@gmail.com',
+    },
+    {
+      id: 4,
+      name: 'Tatianna',
+      role: 'Realtor®',
+      image: null,
+      phone: '(201) 892-3773',
+      email: null,
     }
   ]
 
@@ -55,7 +55,13 @@ const Agents = () => {
                     <img 
                       src={agent.image} 
                       alt={agent.name}
-                      className={agent.id === 3 ? 'agent-image-vitaliia' : ''}
+                      className={
+                        agent.image === '/2.png' 
+                          ? 'agent-image-vitaliia' 
+                          : agent.image === '/IMG_6445.jpg' || agent.id === 1
+                          ? 'agent-image-hamed'
+                          : ''
+                      }
                     />
                   ) : (
                     <div className="agent-placeholder">
@@ -69,28 +75,9 @@ const Agents = () => {
                 <div className="agent-info">
                   <h3 className="agent-name">{agent.name}</h3>
                   <p className="agent-role">{agent.role}</p>
-                  {agent.company && (
-                    <p className="agent-company">{agent.company}</p>
-                  )}
-                  {agent.address && (
-                    <p className="agent-address">
-                      {agent.address}
-                      {agent.address2 && (
-                        <>
-                          <br />
-                          {agent.address2}
-                        </>
-                      )}
-                    </p>
-                  )}
                   {agent.phone && (
                     <p className="agent-contact">
                       <span className="contact-icon">📞</span> {agent.phone}
-                    </p>
-                  )}
-                  {agent.phone2 && (
-                    <p className="agent-contact">
-                      <span className="contact-icon">📞</span> {agent.phone2}
                     </p>
                   )}
                   {agent.email && (

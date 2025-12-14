@@ -12,6 +12,11 @@ const AboutUs = () => {
       <div className="about-content">
         <div className="container">
           <div className="about-text">
+            <img 
+              src="/pix.jpg" 
+              alt="Professional real estate team" 
+              className="about-image"
+            />
             <p className="intro-paragraph">
               Ambassadors Real Estate is a seasoned real estate firm with a proven track record of excellence 
               in the industry. Our team consists of the best agents who bring years of experience, deep market 

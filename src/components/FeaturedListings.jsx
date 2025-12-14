@@ -25,7 +25,7 @@ const FeaturedListings = ({ properties, title = "Featured Properties", showViewM
         {showViewMore && (
           <div className="view-more-container">
             <a 
-              href="https://placeholder-listings-url.com" 
+              href="http://idx.readvantage.com" 
               className="view-more-button"
               target="_blank"
               rel="noopener noreferrer"

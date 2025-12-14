@@ -62,7 +62,7 @@
 
 .agent-image {
   width: 100%;
-  height: 350px;
+  height: 400px;
   background: #f8f9fa;
   display: flex;
   align-items: center;
@@ -79,6 +79,13 @@
 
 .agent-image-vitaliia {
   object-position: center 20% !important;
+}
+
+.agent-image-hamed {
+  object-fit: cover !important;
+  object-position: center center !important;
+  width: 100%;
+  height: 100%;
 }
 
 .agent-placeholder {
@@ -176,7 +183,7 @@
   }
 
   .agent-image {
-    height: 300px;
+    height: 350px;
   }
 }
 
@@ -186,7 +193,7 @@
   }
 
   .agent-image {
-    height: 250px;
+    height: 300px;
   }
 
   .agent-info {

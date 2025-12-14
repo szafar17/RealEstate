@@ -13,7 +13,7 @@ const Header = () => {
         </Link>
         
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-          <a href="https://placeholder-listings-url.com" className="nav-link" target="_blank" rel="noopener noreferrer">Listings</a>
+          <a href="http://idx.readvantage.com" className="nav-link" target="_blank" rel="noopener noreferrer">Listings</a>
           <Link to="/about" className="nav-link">About Us</Link>
           <Link to="/agents" className="nav-link">Agents</Link>
           

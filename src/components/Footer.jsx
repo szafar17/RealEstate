@@ -13,7 +13,6 @@ const Footer = () => {
             </p>
             <div className="social-links">
               <a href="#" aria-label="Facebook">Facebook</a>
-              <a href="#" aria-label="Twitter">Twitter</a>
               <a href="#" aria-label="Instagram">Instagram</a>
               <a href="#" aria-label="LinkedIn">LinkedIn</a>
             </div>
