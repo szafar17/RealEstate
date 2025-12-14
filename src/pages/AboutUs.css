@@ -33,10 +33,22 @@
 }
 
 .about-text {
+  display: block;
   background: #fff;
   padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.about-image {
+  float: left;
+  width: 500px;
+  height: auto;
+  margin: 0 2rem 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
 
 .intro-paragraph {
@@ -60,6 +72,13 @@
     padding: 2rem;
   }
 
+  .about-image {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    display: block;
+  }
+
   .intro-paragraph {
     font-size: 1.1rem;
     text-align: left;
@@ -73,6 +92,10 @@
 
   .about-text {
     padding: 1.5rem;
+  }
+
+  .about-image {
+    margin-bottom: 1rem;
   }
 
   .intro-paragraph {
